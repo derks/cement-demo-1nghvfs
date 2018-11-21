@@ -1,0 +1,96 @@
+2018-11-21 15:58:56,687 (DEBUG) cement.core.foundation : laying cement for the 'myapp' application
+2018-11-21 15:58:56,687 (DEBUG) cement.core.hook : defining hook 'pre_setup'
+2018-11-21 15:58:56,687 (DEBUG) cement.core.hook : defining hook 'post_setup'
+2018-11-21 15:58:56,688 (DEBUG) cement.core.hook : defining hook 'pre_run'
+2018-11-21 15:58:56,688 (DEBUG) cement.core.hook : defining hook 'post_run'
+2018-11-21 15:58:56,688 (DEBUG) cement.core.hook : defining hook 'pre_argument_parsing'
+2018-11-21 15:58:56,688 (DEBUG) cement.core.hook : defining hook 'post_argument_parsing'
+2018-11-21 15:58:56,688 (DEBUG) cement.core.hook : defining hook 'pre_close'
+2018-11-21 15:58:56,688 (DEBUG) cement.core.hook : defining hook 'post_close'
+2018-11-21 15:58:56,688 (DEBUG) cement.core.hook : defining hook 'signal'
+2018-11-21 15:58:56,688 (DEBUG) cement.core.hook : defining hook 'pre_render'
+2018-11-21 15:58:56,688 (DEBUG) cement.core.hook : defining hook 'post_render'
+2018-11-21 15:58:56,688 (DEBUG) cement.core.hook : registering hook 'add_handler_override_options' from cement.core.foundation into hooks['post_setup']
+2018-11-21 15:58:56,688 (DEBUG) cement.core.hook : registering hook 'handler_override' from cement.core.foundation into hooks['post_argument_parsing']
+2018-11-21 15:58:56,688 (DEBUG) cement.core.interface : defining interface 'extension' (ExtensionInterface)
+2018-11-21 15:58:56,688 (DEBUG) cement.core.interface : defining interface 'log' (LogInterface)
+2018-11-21 15:58:56,689 (DEBUG) cement.core.interface : defining interface 'config' (ConfigInterface)
+2018-11-21 15:58:56,689 (DEBUG) cement.core.interface : defining interface 'mail' (MailInterface)
+2018-11-21 15:58:56,689 (DEBUG) cement.core.interface : defining interface 'plugin' (PluginInterface)
+2018-11-21 15:58:56,689 (DEBUG) cement.core.interface : defining interface 'output' (OutputInterface)
+2018-11-21 15:58:56,689 (DEBUG) cement.core.interface : defining interface 'template' (TemplateInterface)
+2018-11-21 15:58:56,689 (DEBUG) cement.core.interface : defining interface 'argument' (ArgumentInterface)
+2018-11-21 15:58:56,689 (DEBUG) cement.core.interface : defining interface 'controller' (ControllerInterface)
+2018-11-21 15:58:56,689 (DEBUG) cement.core.interface : defining interface 'cache' (CacheInterface)
+2018-11-21 15:58:56,689 (DEBUG) cement.core.interface : defining interface 'stack' (StackInterface)
+2018-11-21 15:58:56,689 (DEBUG) cement.core.handler : registering handler '<class 'cement.core.extension.ExtensionHandler'>' into handlers['extension']['cement']
+2018-11-21 15:58:56,690 (DEBUG) cement.core.handler : registering handler '<class 'myapp.controllers.base.Base'>' into handlers['controller']['base']
+2018-11-21 15:58:56,690 (DEBUG) cement.core.foundation : now setting up the 'myapp' application
+2018-11-21 15:58:56,690 (DEBUG) cement.core.foundation : setting up myapp.extension handler
+2018-11-21 15:58:56,690 (DEBUG) cement.core.extension : loading the 'cement.ext.ext_dummy' framework extension
+2018-11-21 15:58:56,691 (DEBUG) cement.core.handler : registering handler '<class 'cement.ext.ext_dummy.DummyOutputHandler'>' into handlers['output']['dummy']
+2018-11-21 15:58:56,691 (DEBUG) cement.core.handler : registering handler '<class 'cement.ext.ext_dummy.DummyTemplateHandler'>' into handlers['template']['dummy']
+2018-11-21 15:58:56,691 (DEBUG) cement.core.handler : registering handler '<class 'cement.ext.ext_dummy.DummyMailHandler'>' into handlers['mail']['dummy']
+2018-11-21 15:58:56,691 (DEBUG) cement.core.extension : loading the 'cement.ext.ext_smtp' framework extension
+2018-11-21 15:58:56,711 (DEBUG) cement.core.handler : registering handler '<class 'cement.ext.ext_smtp.SMTPMailHandler'>' into handlers['mail']['smtp']
+2018-11-21 15:58:56,711 (DEBUG) cement.core.extension : loading the 'cement.ext.ext_plugin' framework extension
+2018-11-21 15:58:56,712 (DEBUG) cement.core.handler : registering handler '<class 'cement.ext.ext_plugin.CementPluginHandler'>' into handlers['plugin']['cement']
+2018-11-21 15:58:56,712 (DEBUG) cement.core.extension : loading the 'cement.ext.ext_configparser' framework extension
+2018-11-21 15:58:56,716 (DEBUG) cement.core.handler : registering handler '<class 'cement.ext.ext_configparser.ConfigParserConfigHandler'>' into handlers['config']['configparser']
+2018-11-21 15:58:56,716 (DEBUG) cement.core.extension : loading the 'cement.ext.ext_logging' framework extension
+2018-11-21 15:58:56,717 (DEBUG) cement.core.handler : registering handler '<class 'cement.ext.ext_logging.LoggingLogHandler'>' into handlers['log']['logging']
+2018-11-21 15:58:56,717 (DEBUG) cement.core.hook : registering hook 'add_logging_arguments' from cement.ext.ext_logging into hooks['pre_argument_parsing']
+2018-11-21 15:58:56,717 (DEBUG) cement.core.hook : registering hook 'handle_logging_arguments' from cement.ext.ext_logging into hooks['post_argument_parsing']
+2018-11-21 15:58:56,717 (DEBUG) cement.core.extension : loading the 'cement.ext.ext_argparse' framework extension
+2018-11-21 15:58:56,718 (DEBUG) cement.core.handler : registering handler '<class 'cement.ext.ext_argparse.ArgparseArgumentHandler'>' into handlers['argument']['argparse']
+2018-11-21 15:58:56,718 (DEBUG) cement.core.extension : loading the 'cement.ext.ext_yaml' framework extension
+2018-11-21 15:58:56,744 (DEBUG) cement.core.hook : registering hook 'suppress_output_before_run' from cement.ext.ext_yaml into hooks['post_argument_parsing']
+2018-11-21 15:58:56,744 (DEBUG) cement.core.hook : registering hook 'unsuppress_output_before_render' from cement.ext.ext_yaml into hooks['pre_render']
+2018-11-21 15:58:56,744 (DEBUG) cement.core.hook : registering hook 'suppress_output_after_render' from cement.ext.ext_yaml into hooks['post_render']
+2018-11-21 15:58:56,744 (DEBUG) cement.core.handler : registering handler '<class 'cement.ext.ext_yaml.YamlOutputHandler'>' into handlers['output']['yaml']
+2018-11-21 15:58:56,745 (DEBUG) cement.core.handler : registering handler '<class 'cement.ext.ext_yaml.YamlConfigHandler'>' into handlers['config']['yaml']
+2018-11-21 15:58:56,745 (DEBUG) cement.core.extension : loading the 'cement.ext.ext_colorlog' framework extension
+2018-11-21 15:58:56,747 (DEBUG) cement.core.handler : registering handler '<class 'cement.ext.ext_colorlog.ColorLogHandler'>' into handlers['log']['colorlog']
+2018-11-21 15:58:56,748 (DEBUG) cement.core.extension : loading the 'cement.ext.ext_jinja2' framework extension
+2018-11-21 15:58:56,789 (DEBUG) cement.core.handler : registering handler '<class 'cement.ext.ext_jinja2.Jinja2OutputHandler'>' into handlers['output']['jinja2']
+2018-11-21 15:58:56,789 (DEBUG) cement.core.handler : registering handler '<class 'cement.ext.ext_jinja2.Jinja2TemplateHandler'>' into handlers['template']['jinja2']
+2018-11-21 15:58:56,790 (DEBUG) cement.core.foundation : adding signal handler <function cement_signal_handler at 0x11148ff28> for signal Signals.SIGTERM
+2018-11-21 15:58:56,790 (DEBUG) cement.core.foundation : adding signal handler <function cement_signal_handler at 0x11148ff28> for signal Signals.SIGINT
+2018-11-21 15:58:56,790 (DEBUG) cement.core.foundation : adding signal handler <function cement_signal_handler at 0x11148ff28> for signal Signals.SIGHUP
+2018-11-21 15:58:56,790 (DEBUG) cement.core.foundation : setting up myapp.config handler
+2018-11-21 15:58:56,790 (DEBUG) cement.core.config : config file '/etc/myapp/myapp.yml' does not exist, skipping...
+2018-11-21 15:58:56,791 (DEBUG) cement.core.config : config file '/Users/derks/.config/myapp/myapp.yml' does not exist, skipping...
+2018-11-21 15:58:56,791 (DEBUG) cement.core.config : config file '/Users/derks/.myapp/config/myapp.yml' does not exist, skipping...
+2018-11-21 15:58:56,791 (DEBUG) cement.core.config : config file '/Users/derks/.myapp.yml' exists, loading settings...
+2018-11-21 15:58:56,792 (DEBUG) cement.core.foundation : setting up myapp.mail handler
+2018-11-21 15:58:56,792 (DEBUG) cement.core.handler : merging config defaults from '<cement.ext.ext_dummy.DummyMailHandler object at 0x111a1b9b0>' into section 'mail.dummy'
+2018-11-21 15:58:56,792 (DEBUG) cement.core.foundation : no cache handler defined, skipping.
+2018-11-21 15:58:56,792 (DEBUG) cement.core.foundation : setting up myapp.log handler
+2018-11-21 15:58:56,793 (DEBUG) cement.core.handler : merging config defaults from '<cement.ext.ext_colorlog.ColorLogHandler object at 0x111a1b908>' into section 'log.colorlog'
+2018-11-21 15:58:56,793 (DEBUG) cement.ext.ext_logging : logging initialized for 'myapp' using ColorLogHandler
+2018-11-21 15:58:56,793 (DEBUG) cement.core.foundation : setting up myapp.plugin handler
+2018-11-21 15:58:56,793 (DEBUG) cement.core.foundation : setting up myapp.arg handler
+2018-11-21 15:58:56,794 (DEBUG) cement.core.foundation : setting up myapp.output handler
+2018-11-21 15:58:56,794 (DEBUG) cement.core.foundation : setting up myapp.template handler
+2018-11-21 15:58:56,794 (DEBUG) cement.core.foundation : setting up application controllers
+2018-11-21 15:58:56,794 (DEBUG) cement.core.handler : merging config defaults from '<myapp.controllers.base.Base object at 0x111a43358>' into section 'controller.base'
+2018-11-21 15:58:56,795 (DEBUG) cement.core.hook : running hook 'post_setup' (<function add_handler_override_options at 0x1113448c8>) from cement.core.foundation
+2018-11-21 15:58:56,795 (DEBUG) cement.core.foundation : no handlers are overridable within the output interface
+2018-11-21 15:58:56,795 (DEBUG) cement.core.foundation : running pre_run hook
+2018-11-21 15:58:56,795 (DEBUG) cement.ext.ext_argparse : controller dispatch passed off to <myapp.controllers.base.Base object at 0x111a43358>
+2018-11-21 15:58:56,795 (DEBUG) cement.ext.ext_argparse : resolving controller nesting/embedding order
+2018-11-21 15:58:56,795 (DEBUG) cement.ext.ext_argparse : collecting commands from <myapp.controllers.base.Base object at 0x111a43358> (stacked_on='base', stacked_type='embedded')
+2018-11-21 15:58:56,796 (DEBUG) cement.ext.ext_argparse : processing arguments for 'base' controller namespace
+2018-11-21 15:58:56,796 (DEBUG) cement.ext.ext_argparse : collecting arguments from <myapp.controllers.base.Base object at 0x111a43358> (stacked_on='base', stacked_type='embedded')
+2018-11-21 15:58:56,796 (DEBUG) cement.ext.ext_argparse : adding argument (args=['-v', '--version'], kwargs={'action': 'version', 'version': '\nMyApp Does Amazing Things! 0.0.1.dev20181121214814\nCement Framework 3.0.2\nPython 3.7.1\nPlatform Darwin-17.7.0-x86_64-i386-64bit\n'})
+2018-11-21 15:58:56,796 (DEBUG) cement.ext.ext_argparse : processing commands for 'base' controller namespace
+2018-11-21 15:58:56,796 (DEBUG) cement.ext.ext_argparse : collecting commands from <myapp.controllers.base.Base object at 0x111a43358> (stacked_on='base', stacked_type='embedded')
+2018-11-21 15:58:56,796 (DEBUG) cement.ext.ext_argparse : adding command 'command1' (controller=base, func=command1)
+2018-11-21 15:58:56,797 (DEBUG) cement.ext.ext_argparse : processing arguments for 'command1' command namespace
+2018-11-21 15:58:56,797 (DEBUG) cement.ext.ext_argparse : adding argument (args=['-f', '--foo'], kwargs={'help': 'notorious foo option', 'action': 'store', 'dest': 'foo'})
+2018-11-21 15:58:56,797 (DEBUG) cement.core.hook : running hook 'pre_argument_parsing' (<function add_logging_arguments at 0x111624598>) from cement.ext.ext_logging
+2018-11-21 15:58:56,797 (DEBUG) cement.core.hook : running hook 'post_argument_parsing' (<function handler_override at 0x11148fea0>) from cement.core.foundation
+2018-11-21 15:58:56,797 (DEBUG) cement.core.hook : running hook 'post_argument_parsing' (<function handle_logging_arguments at 0x111624f28>) from cement.ext.ext_logging
+2018-11-21 15:58:56,797 (DEBUG) cement.core.hook : running hook 'post_argument_parsing' (<function suppress_output_before_run at 0x111632158>) from cement.ext.ext_yaml
+2018-11-21 15:58:56,799 (DEBUG) cement.core.foundation : running post_run hook
+2018-11-21 15:58:56,799 (DEBUG) cement.core.foundation : closing the myapp application
